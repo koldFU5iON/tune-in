@@ -1,0 +1,16 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Build artifacts
+dist/
+build/
+
+# Environment files
+.env
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
