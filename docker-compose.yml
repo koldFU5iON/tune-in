@@ -8,6 +8,8 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    environment:
+      - SPOTIFY_REDIRECT_URI=http://localhost:5173/spotify
     ports:
       - "3001:3001"
     depends_on:
@@ -18,6 +20,8 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    environment:
+      - SPOTIFY_REDIRECT_URI=http://localhost:5173/spotify
     ports:
       - "5173:5173"
     depends_on:
